@@ -34102,7 +34102,7 @@ GameObject:
   - component: {fileID: 1471719775}
   - component: {fileID: 1471719774}
   - component: {fileID: 1471719776}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bricks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36006,6 +36006,7 @@ GameObject:
   - component: {fileID: 1564543358}
   - component: {fileID: 1564543357}
   - component: {fileID: 1564543361}
+  - component: {fileID: 1564543362}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -36028,7 +36029,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 9
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -36165,7 +36166,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 10
-  JumpForce: 10
+  JumpForce: 30
+  isJumping: 0
+  doubleJump: 0
+--- !u!95 &1564543362
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564543356}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c25da8e3a5efc9f4797326f985ce9dbe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1978455841
 GameObject:
   m_ObjectHideFlags: 0
@@ -36178,7 +36202,7 @@ GameObject:
   - component: {fileID: 1978455844}
   - component: {fileID: 1978455843}
   - component: {fileID: 1978455845}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Groud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
