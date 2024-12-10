@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Trabalho da disciplna de Diego.sln"
+    "dotnet.defaultSolution": "Projeto-da-disciplina-de-Diego.sln"
 }
