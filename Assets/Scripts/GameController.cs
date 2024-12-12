@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
     public int totalScore;
     public Text ScoreText;
 
+    public GameObject gameOver;
    
     public static GameController instance;
   
@@ -20,5 +21,10 @@ public class GameController : MonoBehaviour
     public void UpdateScoreText()
     {
         ScoreText.text = totalScore.ToString();
+    }
+
+    public void ShowGameOver()
+    {
+        gameOver.SetActive (true);
     }
 }
